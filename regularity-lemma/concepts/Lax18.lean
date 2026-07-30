@@ -1,0 +1,10 @@
+import Lax18.FiniteGraphPartitions
+import Lax18.EdgeDensity
+import Lax18.RegularPairs
+import Lax18.RegularPartitions
+import Lax18.PartitionEnergy
+import Lax18.PartitionEnergyBounds
+import Lax18.PartitionEnergyMonotonicity
+import Lax18.EnergyIncrement
+import Lax18.EquitableCleanup
+import Lax18.SzemerediRegularityLemma

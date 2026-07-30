@@ -1,0 +1,5 @@
+import Lax18Proofs.PartitionEnergyBounds
+import Lax18Proofs.PartitionEnergyMonotonicity
+import Lax18Proofs.EnergyIncrement
+import Lax18Proofs.EquitableCleanup
+import Lax18Proofs.RegularityLemma
