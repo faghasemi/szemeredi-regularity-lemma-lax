@@ -85,7 +85,7 @@ private lemma partitionEnergy_vertexPartitionOfFinpartition
           (G.edgeDensity (R.parts.equivFin.symm i).1 B.1 : ℝ) ^ 2 := by
       apply Finset.sum_congr rfl
       intro i _
-      simpa using
+      exact
         (Equiv.sum_comp R.parts.equivFin.symm
           (fun B : R.parts =>
             (((R.parts.equivFin.symm i).1.card : ℝ) * (B.1.card : ℝ)) /
