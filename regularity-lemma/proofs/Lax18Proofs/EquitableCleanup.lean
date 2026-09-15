@@ -527,7 +527,9 @@ private lemma badVertexCount_le_of_remainders {S : Finset V}
   have hbadcard :
       ((badParts P Q).biUnion id).card = badVertexCount P Q := by
     unfold badVertexCount
-    simpa only [id_eq] using (Finset.card_biUnion hbad_disjoint)
+    change ((badParts P Q).biUnion (fun x => x)).card =
+      ∑ B ∈ badParts P Q, B.card
+    exact Finset.card_biUnion hbad_disjoint
   have hsubset :
       (badParts P Q).biUnion id ⊆ P.parts.biUnion (remainder Q) := by
     intro v hv
